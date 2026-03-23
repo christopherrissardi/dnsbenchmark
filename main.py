@@ -81,7 +81,7 @@ def testar_dns(lista_dns, websites):
             tempo_resposta = medir_tempo_resposta(dns['ip'], site)
             if tempo_resposta is not None:
                 tempos_resposta.append(tempo_resposta)
-                print(f"Response time for {site}: {tempo_resposta:.2f} ms.")
+                print(f"Response time for {site}: {B}{tempo_resposta:.2f} ms.{O}")
             else:
                 print(f"There was no response in time to the site {site}. Skipping test...")
         

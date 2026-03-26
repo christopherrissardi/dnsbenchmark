@@ -5,7 +5,9 @@ websites = [
     
     "google.com", 
     "amazon.com", 
-    "facebook.com", 
+    "facebook.com",
+    "tiktok.com", 
+    "telegram.org",
     "x.com", 
     "wikipedia.org", 
     "cnn.com", 
@@ -15,8 +17,9 @@ websites = [
     "twitch.tv", 
     "linkedin.com",
     "github.com",
-    "zoom.us"
-    
+    "zoom.us",
+    "openai.com"
+    "yandex.ru",
+    "vk.com",
+    "alibaba.com", 
     ]
-
-

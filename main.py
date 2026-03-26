@@ -128,10 +128,8 @@ def exibir_opcoes(top_dns_count, city_dns_count, country_dns_count):
     print(f"[{B}2{O}] DNS benchmark test with servers in your city. ({B}{city_dns_count}{O} servers available in your city).")
     print(f"[{B}3{O}] DNS benchmark test with servers in your country. ({B}{country_dns_count}{O} servers available in your country).")
     print(f"[{B}4{O}] DNS benchmark test with global valid servers. (Coming soon)")
-    print(f"[{B}5{O}] IP Geolocation Lookup")
+    print(f"[{B}5{O}] DNS or IP Geolocation Lookup - Search for information about any IP address.")
     print(f"")
-    
-    print(f"[{B}8{O}] Root Servers")
     print(f"[{B}9{O}] Credits.")
     print(f"[{B}0{O}] Exit.\n")
 

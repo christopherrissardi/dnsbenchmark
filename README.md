@@ -6,7 +6,7 @@ Test the best DNS servers for your home or workplace
 
 Tool developed to perform DNS Benchmarking. It has an interactive menu so that the user can choose which type of test to perform. There are currently 3 types of tests
 
-For all types of tests, the response time of an available DNS server for a known public domain is queried. Among the domains, the most well-known globally are listed, such as Google, Amazon, Netflix, and others. (You can check the available domains in the `domains.py` file.)
+For all types of tests, the response time of an available DNS server for a known public domain is queried. Among the domains, the most well-known globally are listed, such as Google, Amazon, Netflix, and others. (You can check the available domains in the `src/config.py` file.)
 
 Feel free to customize the sites you prefer or include more sites in the test. I focused on including only the most well-known globally so that everyone would benefit during the test!
 

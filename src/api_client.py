@@ -1,11 +1,9 @@
 import requests
 import whois
-import os
 from src.ui import B, O, main_banner
 from src.utils import get_username, get_local_ip
 
 def data_information():
-    """Busca dados de geolocalização do usuário com base em seu IP público."""
     url = "https://ipwho.is/"
     
     try:
@@ -39,7 +37,7 @@ def data_information():
         return None
 
 def busca_ip():
-    """Realiza uma busca de geolocalização e WHOIS para um endereço IP."""
+
     ip = input(f"\n[{B}*{O}] Enter the IP address to be queried: ")
     url = f'http://ip-api.com/json/{ip}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query'
     

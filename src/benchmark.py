@@ -5,9 +5,6 @@ from src.utils import salvar_resultados
 import os
 
 def validar_dns(dns_server, dominio_teste):
-    """
-    Valida se um servidor DNS está responsivo.
-    """
     try:
         resolver_instance = resolver.Resolver()
         resolver_instance.nameservers = [dns_server]
@@ -23,9 +20,6 @@ def validar_dns(dns_server, dominio_teste):
     return False
 
 def medir_tempo_resposta(dns_server, dominio):
-    """
-    Mede o tempo de resposta para uma única consulta de domínio.
-    """
     try:
         resolver_instance = resolver.Resolver()
         resolver_instance.nameservers = [dns_server]
@@ -38,9 +32,6 @@ def medir_tempo_resposta(dns_server, dominio):
         return None 
 
 def testar_dns(lista_dns, websites):
-    """
-    Executa o benchmark para uma determinada lista de servidores DNS e sites.
-    """
     if not lista_dns:
         print("No DNS servers available to test.")
         return

@@ -6,7 +6,6 @@ O = "\033[1;37m"  # Branco
 H = "\033[1;30m"  # Preto 2
 
 def main_banner():
-    """Exibe o banner principal da aplicação."""
     print(rf"""{B}                                    
 {O}        ____ _       _           _  {B} ____  _   _  ____
 {O}       / ___| | ___ | |__   __ _| | {B}|  _ \| \ | |/ ___|
@@ -23,7 +22,6 @@ def main_banner():
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
 
 def exibir_opcoes(top_dns_count, city_dns_count, country_dns_count):
-    """Exibe as opções do menu principal."""
     print("\nChoose one of the test options:\n")
     print(f"[{B}1{O}] DNS benchmark test with most popular servers [TOP-DNS]. ({B}{top_dns_count}{O} servers).")
     print(f"[{B}2{O}] DNS benchmark test with servers in your city. ({B}{city_dns_count}{O} servers available in your city).")
@@ -35,7 +33,6 @@ def exibir_opcoes(top_dns_count, city_dns_count, country_dns_count):
     print(f"[{B}0{O}] Exit.\n")
 
 def credits_info():
-    """Exibe a tela de créditos."""
     os.system('cls' if os.name == 'nt' else 'clear')
     main_banner()
     print(f"""

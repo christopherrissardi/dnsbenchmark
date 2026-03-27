@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Adiciona src ao path para permitir importações absolutas
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
 from src.ui import main_banner, exibir_opcoes, credits_info, information, B, O

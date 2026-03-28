@@ -41,7 +41,7 @@ def testar_dns(lista_dns, websites):
 
     for dns in lista_dns:
         print(f"\nValidating DNS Server: {B}{dns['IP']}{O} | {dns.get('ISP', 'N/A')} | {dns.get('CITY', 'Unknown')} - {dns.get('COUNTRY_CODE', 'N/A')}{O}")
-        print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
 
         if not validar_dns(dns['IP'], websites[0]):
             print(f"There was no response from DNS server {dns['IP']}. Ignoring...")

@@ -22,7 +22,7 @@ def data_information():
 [{B}+{O}] ISP: {data['connection']['isp']}
 [{B}+{O}] Domain: {data['connection']['domain']}
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
             return data
         else:
             print("Error getting external IP information. API reported failure.")

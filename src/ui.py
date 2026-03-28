@@ -6,20 +6,15 @@ O = "\033[1;37m"  # Branco
 H = "\033[1;30m"  # Preto 2
 
 def main_banner():
-    print(rf"""{B}                                    
-{O}        ____ _       _           _  {B} ____  _   _  ____
-{O}       / ___| | ___ | |__   __ _| | {B}|  _ \| \ | |/ ___|
-{O}      | |  _| |/ _ \| '_ \ / _` | | {B}| | | |  \| |\___ \                                
-{O}      | |_| | | (_) | |_) | (_| | | {B}| |_| | |\  | ___) |          
-{O}       \____|_|\___/|_.__/ \__,_|_| {B}|____/|_| \_||____/             
-{O}          {H}   ____                  _                           _            
-{O}          {H}  | __ )  ___ _ __   ___| |__   _ __ ___   __ _ _ __| | __    
-{O}          {H}  |  _ \ / _ | '_ \ / __| '_ \ | '_ ` _ \ / _` | '__| |/ /
-{O}          {H}  | |_) |  __| | | | (__| | | || | | | | | (_| | |  |   <      
-{O}          {H}  |____/ \___|_| |_|\___|_| |_||_| |_| |_|\__,_|_|  |_|\_\   
-{O}                                                  
-{O}                                                 Created By {B}Christopher Rissardi{O}                                                       
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
+    print(rf"""{B}                                                                                                                                                  
+{O}       ┏━╸╻  ┏━┓┏┓ ┏━┓╻  {B} ╺┳┓┏┓╻┏━┓
+{O}       ┃╺┓┃  ┃ ┃┣┻┓┣━┫┃  {B}  ┃┃┃┗┫┗━┓
+{O}       ┗━┛┗━╸┗━┛┗━┛╹ ╹┗━╸{B} ╺┻┛╹ ╹┗━┛
+{O}          {H}┏┓ ┏━╸┏┓╻┏━╸╻ ╻┏┳┓┏━┓┏━┓╻┏     Powered By {B}Christopher Rissardi{O}
+{O}          {H}┣┻┓┣╸ ┃┗┫┃  ┣━┫┃┃┃┣━┫┣┳┛┣┻┓   
+{O}          {H}┗━┛┗━╸╹ ╹┗━╸╹ ╹╹ ╹╹ ╹╹┗╸╹ ╹                                                           
+{O}                          
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
 
 def exibir_opcoes(top_dns_count, city_dns_count, country_dns_count):
     print("\nChoose one of the test options:\n")
@@ -41,11 +36,3 @@ def credits_info():
     Thank you very much for using the tool! I hope it can contribute in some way to your goals
     of finding the best DNS server for your home/work/company or whatever! :)
     """)
-
-def information():
-    """Exibe a tela de 'informações'."""
-    print(f"\n\nRoot Servers Available - Info")
-    print("Here is the tab dedicated to information about Root-Servers spread all over the world")
-    print(f"""
-
-""")

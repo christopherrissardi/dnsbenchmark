@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
-from src.ui import main_banner, exibir_opcoes, credits_info, information, B, O
+from src.ui import main_banner, exibir_opcoes, credits_info, B, O
 from src.config import websites
 from src.api_client import data_information, busca_ip
 from src.database import get_top_dns, get_dns_by_city, get_dns_by_country, get_all_dns_counts
@@ -56,13 +56,6 @@ def main():
                 nova = input(f"\n[{B}?{O}] Do you want to perform a new IP lookup? [Y/N]: ").lower()
                 if nova not in ["y", "yes"]:
                     break
-            os.system('cls' if os.name == 'nt' else 'clear')
-            main_banner()
-
-        elif opcao == "8":
-            os.system('cls' if os.name == 'nt' else 'clear')
-            information()
-            input(f"Press Enter to continue... ") 
             os.system('cls' if os.name == 'nt' else 'clear')
             main_banner()
 

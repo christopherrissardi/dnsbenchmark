@@ -40,18 +40,18 @@ def testar_dns(lista_dns, websites):
     resultados = []
 
     for dns in lista_dns:
-        print(f"\nValidating DNS Server: {B}{dns['ip']}{O} | {dns.get('isp', 'N/A')} | {dns.get('city', 'Unknown')} - {dns.get('country_id', 'N/A')}{O}")
+        print(f"\nValidating DNS Server: {B}{dns['IP']}{O} | {dns.get('ISP', 'N/A')} | {dns.get('CITY', 'Unknown')} - {dns.get('COUNTRY_CODE', 'N/A')}{O}")
         print(f"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-        if not validar_dns(dns['ip'], websites[0]):
-            print(f"There was no response from DNS server {dns['ip']}. Ignoring...")
+        if not validar_dns(dns['IP'], websites[0]):
+            print(f"There was no response from DNS server {dns['IP']}. Ignoring...")
             continue
 
-        print(f"Testing the DNS server: {B}{dns['ip']}{O}")
+        print(f"Testing the DNS server: {B}{dns['IP']}{O}")
         
         tempos_resposta = []  
         for site in websites:
-            tempo_resposta = medir_tempo_resposta(dns['ip'], site)
+            tempo_resposta = medir_tempo_resposta(dns['IP'], site)
             if tempo_resposta is not None:
                 tempos_resposta.append(tempo_resposta)
                 print(f"Response time for {site}: {B}{tempo_resposta:.2f} ms.{O}")
@@ -60,8 +60,8 @@ def testar_dns(lista_dns, websites):
         
         if tempos_resposta:
             media_tempo = sum(tempos_resposta) / len(tempos_resposta)
-            provedor = dns.get('isp', 'Unknown Provider')
-            resultados.append((dns['ip'], provedor, media_tempo))
+            provedor = dns.get('ISP', 'Unknown Provider')
+            resultados.append((dns['IP'], provedor, media_tempo))
             print(f"Average response time: {media_tempo:.2f} ms.")
         else:
             print("No valid response for this server. Ignoring...")
